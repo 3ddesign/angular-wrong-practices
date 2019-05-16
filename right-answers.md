@@ -1,7 +1,8 @@
 #### #1
+```html
+<!-- Comment @3ddesign:
 Some declared variables are not initialized and/or not typed.
-
-
+-->
 ```ts
 // some-page.component.ts
 @Component({
@@ -31,6 +32,7 @@ At least designate types of declared variables.
 Also maybe there is a way to combine error variables (isErrorShow, isErrorShowUserName, isErrorShowPassword)?
 
 #### #2
+```html
 <!-- Comment @3ddesign:
 I do not like nesting in accessing the service and order in conditions for directives
 As well as the difficulty of determining the first / last elements 
@@ -58,11 +60,11 @@ Use local variables with NgFor directive (first, last, even, odd), istead this c
 So its may looks like this: *ngIf="last"
 
 #### #3
+```html
 <!-- Comment @3ddesign:
 Work with DOM using 'document' is not Angular way
 Also in this case, we definitely can avoid using typing with 'any'
 And not clear why we use here setTimeout
-
 -->
 ```ts
 // something.service.ts
