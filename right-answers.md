@@ -1,7 +1,6 @@
 #### #1
-<!-- Comment @3ddesign:
 Some declared variables are not initialized and/or not typed.
--->
+
 
 ```ts
 // some-page.component.ts
