@@ -4,6 +4,7 @@
 Some declared variables are not initialized and/or not typed.
 -->
 ```
+```ts
 // some-page.component.ts
 @Component({
   selector: 'appprefix-some-page',
@@ -25,11 +26,13 @@ export class SomePageComponent implements OnInit {
               private translate: TranslateService,
               private router: Router
   ) {
+  
 ```
 ---------------
 Possible solution:
 At least designate types of declared variables. 
 Also maybe there is a way to combine error variables (isErrorShow, isErrorShowUserName, isErrorShowPassword)?
+```
 
 #### #2
 ```html
@@ -38,6 +41,7 @@ I do not like nesting in accessing the service and order in conditions for direc
 As well as the difficulty of determining the first / last elements 
 -->
 ```
+```ts
 // something.component.html
   <li class="something-list-item"
       *ngFor="let something of somethingService.stepSomething;
@@ -54,11 +58,12 @@ As well as the difficulty of determining the first / last elements
   </li>
 ```
 ---------------
+```html
 Possible solution:
 Use a getter in the service, to avoid nested calls like this: somethingService.stepSomething
 Use local variables with NgFor directive (first, last, even, odd), istead this constructions 'somethingService.stepSomethings.length - 1'  
 So its may looks like this: *ngIf="last"
-
+```
 #### #3
 ```html
 <!-- Comment @3ddesign:
