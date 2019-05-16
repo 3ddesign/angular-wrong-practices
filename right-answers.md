@@ -33,7 +33,7 @@ Possible solution:
 At least designate types of declared variables. 
 Also maybe there is a way to combine error variables (isErrorShow, isErrorShowUserName, isErrorShowPassword)?
 ```
-
+```
 #### #2
 ```html
 <!-- Comment @3ddesign:
@@ -72,6 +72,7 @@ Also in this case, we definitely can avoid using typing with 'any'
 And not clear why we use here setTimeout
 -->
 ```
+```ts
 // something.service.ts
 @Injectable({
   providedIn: 'root'
