@@ -99,7 +99,7 @@ Possible solution:
 Using the tools provided by Angular as @ViewChild
 Exact typing of declared variables
 It seems in this case it is possible to use life cycle hooks instead setTimeout, but otherwise it is necessary to leave a  comment with description of solved problem 
-
+```
 #### #6
 ```html
 <!-- Comment @dmkorol:
