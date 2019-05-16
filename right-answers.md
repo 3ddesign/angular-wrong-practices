@@ -57,8 +57,7 @@ As well as the difficulty of determining the first / last elements
     >{{ something.title }}</span>
   </li>
 ```
----------------
-```html
+```
 Possible solution:
 Use a getter in the service, to avoid nested calls like this: somethingService.stepSomething
 Use local variables with NgFor directive (first, last, even, odd), istead this constructions 'somethingService.stepSomethings.length - 1'  
