@@ -3,7 +3,7 @@
 <!-- Comment @3ddesign:
 Some declared variables are not initialized and/or not typed.
 -->
-```ts
+```
 // some-page.component.ts
 @Component({
   selector: 'appprefix-some-page',
@@ -37,7 +37,7 @@ Also maybe there is a way to combine error variables (isErrorShow, isErrorShowUs
 I do not like nesting in accessing the service and order in conditions for directives
 As well as the difficulty of determining the first / last elements 
 -->
-```html
+```
 // something.component.html
   <li class="something-list-item"
       *ngFor="let something of somethingService.stepSomething;
@@ -66,7 +66,7 @@ Work with DOM using 'document' is not Angular way
 Also in this case, we definitely can avoid using typing with 'any'
 And not clear why we use here setTimeout
 -->
-```ts
+```
 // something.service.ts
 @Injectable({
   providedIn: 'root'
